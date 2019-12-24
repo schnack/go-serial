@@ -1,4 +1,4 @@
-module go.bug.st/serial
+module github.com/schnack/serial
 
 go 1.13
 
