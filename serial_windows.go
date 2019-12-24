@@ -421,7 +421,7 @@ func nativeOpen(portName string, mode *Mode) (*windowsPort, error) {
 
 	// Set timeouts to 1 second
 	timeouts := &commTimeouts{
-		ReadIntervalTimeout:         0xFFFFFFFF,
+		ReadIntervalTimeout:         0x1,
 		ReadTotalTimeoutMultiplier:  0xFFFFFFFF,
 		ReadTotalTimeoutConstant:    1000, // 1 sec
 		WriteTotalTimeoutConstant:   0,
